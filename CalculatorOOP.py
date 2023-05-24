@@ -9,4 +9,4 @@ from calcOperations import Operations
 class Calculator():
     def __init__(self):
         self.result= 0
-        
+
