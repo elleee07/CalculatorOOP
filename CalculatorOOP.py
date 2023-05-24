@@ -3,8 +3,15 @@
 
 # OOP CALCULATOR
 
-# creating class for main calculator 
+# importing files 
 
 import operations 
+import calculator_gui
 
-class Calculatror():
+# creating class for main calculator 
+
+class Calculator():
+    def __init__(self):
+        self.operations = operations 
+
+
