@@ -1,5 +1,5 @@
 
-import calculator_gui
+import CalculatorOOP 
 
 # class for operations
 class operations():
@@ -17,3 +17,4 @@ class operations():
         # for division
         if math == "division":
                 entry_num.insert(0, first_num / int(second_number))
+

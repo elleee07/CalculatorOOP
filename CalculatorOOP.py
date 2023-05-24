@@ -3,21 +3,13 @@
 
 # OOP CALCULATOR
 
-# importing files 
-import operations
+# importing files
+from tkinter import * 
+import operations 
 
-# creating class for main calculator and operations
-try: 
-    class Calculator():
-        def __init__(self):
-            self.operations = operations 
-except:
-    print("Oppss! Error.")
-
-finally:
-# printing text for output
-    print("\033[96m=" * 130)
-    print("\033[32mCongratulations! Your code is already clear. Thank you :>")
-    print("\033[96m=" * 130)
+# creating class for main calculator 
+class Calculator():
+    def __init__(self):
+        self.operations = operations 
 
 
