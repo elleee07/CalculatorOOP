@@ -136,6 +136,7 @@ try:
 
 except:
     print("Error found")
+# output
 finally:
     print("\033[96m=" * 130)
     print("\033[32mCongratulations! Your code is already clear, you can pass this right now to your handsome professor. Thank you :>")
