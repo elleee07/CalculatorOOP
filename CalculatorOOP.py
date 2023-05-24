@@ -3,13 +3,10 @@
 
 # OOP CALCULATOR
 
-# importing files
-from tkinter import * 
-import operations 
+from calcOperations import Operations
 
 # creating class for main calculator 
 class Calculator():
     def __init__(self):
-        self.operations = operations 
-
-
+        self.result= 0
+        
