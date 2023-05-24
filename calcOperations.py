@@ -1,5 +1,3 @@
-import calculator_gui
-
 # class for operations
 
 class Operations():
