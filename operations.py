@@ -2,7 +2,7 @@
 import calculator_gui
 
 class operations():
-    def calc_operations(self, math, first_num, second_number):
+    def calc_operations(self, math, entry_num, first_num, second_number):
         if math == "add":
                 entry_num.insert(0, first_num + int(second_number))
         if math == "subtract":
