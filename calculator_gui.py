@@ -147,6 +147,6 @@ except NameError:
     print("Name error located!")
 finally:
     print("\033[96m=" * 130)
-    print("\033[32mCongratulations! Your code is already clear. Thank you :>")
+    print("\033[32m Your code is already clear. Congrats :>")
     print("\033[96m=" * 130)
     root.mainloop()
