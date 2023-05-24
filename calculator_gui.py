@@ -134,12 +134,8 @@ try:
     button_decimal.grid(row=5, column=1)
     button_equal.grid(row=5, column=2, columnspan=3)
 
-except ValueError:
-    print("Value error located!")
-except ZeroDivisionError:
-    print("Can't divide")
-except NameError:
-    print("Name error located!")
+except:
+    print("Error found")
 finally:
     print("\033[96m=" * 130)
     print("\033[32mCongratulations! Your code is already clear, you can pass this right now to your handsome professor. Thank you :>")
