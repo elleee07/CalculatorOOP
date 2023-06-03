@@ -4,7 +4,11 @@
 # OOP CALCULATOR
 
 from calcOperations import Operations
-import calculator_gui
+
+calc = Operations
+
+
+
 
 # creating class for main calculator
 try:
