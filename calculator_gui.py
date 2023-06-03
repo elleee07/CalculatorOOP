@@ -1,17 +1,14 @@
+from tkinter import*
 
-# importing tkinter
-try:
-    from tkinter import *
+root = Tk()
+root.title("Elle.Calculator")
+root.configure(bg="gray")
 
-    root = Tk() 
-    root.title("Elle.Calculator")
-    root.configure(bg="gray")
+entry_num = Entry(root, width=50, borderwidth=25)
+root.resizable(0,0)
+entry_num.grid(row=0, column=0, columnspan=80, padx=30)
 
-    entry_num = Entry(root, width=50, borderwidth=25)
-    root.resizable(0,0)
-    entry_num.grid(row=0, column=0, columnspan=80, padx=30)
-
-    # defining buttons 
+class UserInterface():
     def button_click(number):
         current = entry_num.get()
         entry_num.delete(0, END)
@@ -74,79 +71,4 @@ try:
         second_number = entry_num.get()
         entry_num.delete(0, END)
 
-        if math == "add":
-                entry_num.insert(0, first_num + int(second_number))
-        if math == "subtract":
-                entry_num.insert(0, first_num - int(second_number))
-        if math == "multiplication":
-                entry_num.insert(0, first_num * int(second_number))
-        if math == "division":
-                entry_num.insert(0, first_num / int(second_number))
-
-    button_1 = Button(root, text="1", padx=45, pady=20, command=lambda: button_click(1))
-    button_2 = Button(root, text="2", padx=50, pady=20, command=lambda: button_click(2))
-    button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3))
-    button_4 = Button(root, text="4", padx=45, pady=20, command=lambda: button_click(4))
-    button_5 = Button(root, text="5", padx=50, pady=20, command=lambda: button_click(5))
-    button_6 = Button(root, text="6", padx=40, pady=20, command=lambda: button_click(6))
-    button_7 = Button(root, text="7", padx=45, pady=20, command=lambda: button_click(7))
-    button_8 = Button(root, text="8", padx=50, pady=20, command=lambda: button_click(8))
-    button_9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
-    button_0 = Button(root, text="0", padx=45, pady=20, command=lambda: button_click(0))
-
-    # add button
-    button_add = Button(root, text="+", padx=41, pady=20, command=button_add)
-
-    # subtract button 
-    button_subtract = Button(root, text="-", padx=42, pady=20, command=button_subtract)
-
-    # multiplication button 
-    button_multiplication = Button(root, text="*", padx=42, pady=20, command=button_multiplication)
-
-    # division button 
-    button_division = Button(root, text="/", padx=42, pady=20, command=button_division)
-
-    # function buttons 
-    button_equal = Button(root, text="=", padx=88, pady=20, command=button_equal)
-    button_clearEntry = Button(root, text="CE", padx=46, pady=20, command=button_clearEntry)
-    button_clear = Button(root, text="C", padx=39, pady=20, command=button_clear)
-    # added this to complete the template of my calculator 
-    button_percentage = Button(root, text="%", padx=43, pady=20, command=button_percentage)
-    button_decimal = Button(root, text=".", padx=52, pady=20, command=button_decimal)
-
-    # putting the buttons on the screen
-    button_percentage.grid(row=1, column=0)
-    button_clearEntry.grid(row=1, column=1) 
-    button_clear.grid(row=1, column=2) 
-    button_add.grid(row=1, column=3) 
-    button_subtract.grid(row=2, column=3) 
-    button_multiplication.grid(row=3, column=3) 
-    button_division.grid(row=4, column=3)
-
-    button_1.grid(row=4, column=0)
-    button_2.grid(row=4, column=1)
-    button_3.grid(row=4, column=2)
-
-    button_4.grid(row=3, column=0)
-    button_5.grid(row=3, column=1)
-    button_6.grid(row=3, column=2)
-
-    button_7.grid(row=2, column=0)
-    button_8.grid(row=2, column=1)
-    button_9.grid(row=2, column=2)
-
-    button_0.grid(row=5, column=0)
-    button_decimal.grid(row=5, column=1)
-    button_equal.grid(row=5, column=2, columnspan=3)
-
-except ValueError:
-    print("Value error located!")
-except ZeroDivisionError:
-    print("Can't divide")
-except NameError:
-    print("Name error located!")
-finally:
-    print("\033[96m=" * 130)
-    print("\033[32m Your code is already clear. Congrats :>")
-    print("\033[96m=" * 130)
-    root.mainloop()
+    
