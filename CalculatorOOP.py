@@ -3,8 +3,5 @@
 
 # OOP CALCULATOR
 
-from calcOperations import Operations
-from calculator_gui import UserInterface
 
-ui = UserInterface
-calc = Operations
+
